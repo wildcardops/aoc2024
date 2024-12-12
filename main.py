@@ -10,6 +10,7 @@ from aoc2024.day3.part1 import part1 as day3_part1
 from aoc2024.day3.part2 import part2 as day3_part2
 
 from aoc2024.day4.part1 import part1 as day4_part1
+from aoc2024.day4.part2 import part2 as day4_part2
 
 @click.group()
 def cli():
@@ -41,7 +42,7 @@ def day4():
     pass
 cli.add_command(day4)
 day4.add_command(day4_part1)
-
+day4.add_command(day4_part2)
 
 if __name__ == '__main__':
     cli()
